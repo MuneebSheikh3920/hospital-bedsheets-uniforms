@@ -1,0 +1,50 @@
+/* product.css – single product detail page ke liye */
+#p-main {
+    width: 100%;
+    border-radius: 18px;
+    aspect-ratio: 4/3;
+    object-fit: cover;
+    border: 1px solid var(--bd);
+    box-shadow: var(--sh)
+}
+
+.thumbs {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px
+}
+
+.thumbs img {
+    width: 84px;
+    height: 64px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid var(--bd);
+    cursor: pointer
+}
+
+.thumbs img.on {
+    border-color: var(--pri)
+}
+
+.badges {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin: 10px 0 14px
+}
+
+.price-box {
+    margin-bottom: 14px
+}
+
+.btns {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap
+}
+
+.spec td:first-child {
+    color: var(--mut);
+    width: 38%
+}

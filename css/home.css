@@ -1,0 +1,151 @@
+/* home.css – sirf Home page (index.html) ke liye */
+.hero {
+    background: radial-gradient(900px 400px at 85% 0%, #14585a, transparent), linear-gradient(135deg, #0c2a30, #0b4a4c);
+    color: #fff;
+    padding: 64px 0 70px
+}
+
+.hero .g {
+    display: grid;
+    gap: 36px;
+    grid-template-columns: 1.1fr .9fr;
+    align-items: center
+}
+
+@media(max-width:820px) {
+    .hero .g {
+        grid-template-columns: 1fr
+    }
+
+    .hero {
+        padding: 40px 0 48px
+    }
+}
+
+.hero .kick {
+    color: var(--gold)
+}
+
+.hero p {
+    color: #cfe3e4;
+    font-size: 18px;
+    max-width: 520px
+}
+
+.hero .btns {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 20px
+}
+
+.hero .imgs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px
+}
+
+.hero .imgs img {
+    width: 100%;
+    border-radius: 16px;
+    aspect-ratio: 1;
+    object-fit: cover;
+    box-shadow: 0 14px 34px rgba(0, 0, 0, .35)
+}
+
+.hero .imgs img:nth-child(2) {
+    transform: translateY(22px)
+}
+
+.stats {
+    background: var(--card);
+    border-bottom: 1px solid var(--bd)
+}
+
+.stats .wrap {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    text-align: center
+}
+
+.stats b {
+    display: block;
+    font: 700 22px Georgia, serif;
+    color: var(--pri)
+}
+
+.stats span {
+    font-size: 13px;
+    color: var(--mut)
+}
+
+.cards2 {
+    display: grid;
+    gap: 14px;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr))
+}
+
+.feat {
+    background: var(--card);
+    border: 1px solid var(--bd);
+    border-radius: 16px;
+    padding: 20px
+}
+
+.feat .ic {
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    background: var(--pri2);
+    display: grid;
+    place-items: center;
+    font-size: 21px;
+    margin-bottom: 10px
+}
+
+.steps {
+    counter-reset: s;
+    display: grid;
+    gap: 14px;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr))
+}
+
+.steps div {
+    counter-increment: s;
+    background: var(--bg);
+    border: 1px solid var(--bd);
+    border-radius: 16px;
+    padding: 20px
+}
+
+.steps div::before {
+    content: counter(s);
+    font: 700 30px Georgia, serif;
+    color: var(--gold);
+    display: block
+}
+
+.faq {
+    max-width: 780px
+}
+
+details {
+    background: var(--card);
+    border: 1px solid var(--bd);
+    border-radius: 12px;
+    padding: 14px 18px;
+    margin-bottom: 10px
+}
+
+summary {
+    cursor: pointer;
+    font-weight: 600
+}
+
+details[open] summary {
+    color: var(--pri);
+    margin-bottom: 6px
+}

@@ -1,0 +1,6 @@
+/* bed-sheets.css – sirf Bed Sheets page ke liye */
+.note {
+    font-size: 13.5px;
+    color: var(--mut);
+    margin-top: 12px
+}

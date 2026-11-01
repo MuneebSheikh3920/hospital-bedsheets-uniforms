@@ -1,0 +1,18 @@
+/* coming-soon.css – Patient / Nurse / Doctor dresses pages ke liye */
+.soonbox {
+    text-align: center;
+    padding: 36px 20px;
+    background: var(--card);
+    border: 2px dashed var(--bd);
+    border-radius: 20px;
+    margin-bottom: 26px
+}
+
+.soonbox .big {
+    font-size: 42px
+}
+
+.soonbox p {
+    max-width: 520px;
+    margin: 0 auto 16px
+}
